@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --gradiente-primario: linear-gradient(45deg, #FF7E5F, #feb47b, #FF6A00, #FF1493, #00BFFF); /* Gradiente multicolorido */
+    --gradiente-secundario: linear-gradient(135deg, #00DBDE, #FC00FF); /* Gradiente secundário suave */
+    --laranja-claro: #FF862A;
+    --azul-claro: #00BFFF;
+    --rosa-claro: #FF1493;
+    --verde-claro: #00FF7F;
+    --amarelo-claro: #FFD700;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--gradiente-primario); /* Fundo com gradiente multicolorido */
+    color: #fff; /* Texto branco para contraste */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    padding: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--laranja-claro);
+}
+
+.inicio-fundo {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    background: var(--gradiente-secundario); /* Gradiente como fundo */
+}
+
+/* Posicionamento da imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background: var(--gradiente-primario);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.botao-inicio:hover {
+    background: var(--gradiente-secundario);
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat, url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo translúcido com gradiente por trás */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--gradiente-secundario);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#galeria {
+    background-color: #FAF4F4;
+    padding: 5rem 0;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.8); /* Formulário com fundo transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.formulario button {
+    background-color: var(--gradiente-secundario);
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.formulario button:hover {
+    background-color: var(--gradiente-primario);
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--gradiente-secundario);
+    color: white;
+}
+
+.opcoes-acessibilidade button:hover {
+    background-color: var(--gradiente-primario);
+}
+
+.apresenta-lista {
+    display: none;
+}
